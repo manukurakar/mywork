@@ -1,0 +1,56 @@
+doctype html(lang='en')
+head
+    title 
+    |   
+    meta(charset='utf-8')
+    |   
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |   
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+    |   
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    |   
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+  body(background = "http://localhost/public/images/2.jpg")
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='#') Your exam portal
+        |     
+        div
+          ul.nav.navbar-nav
+            li.active
+              a(href='#') Home
+            |         
+            li
+              a(href='#') How we work
+            |         
+            li
+              a(href='#') Pricing
+            |         
+            li
+              a(href='#') Contact Us
+    .container-fluid
+      .jumbotron
+        block front
+        |       
+        |     
+        p This page will grow as we add more and more components from Bootstrap...
+        |       
+        |     
+        a.btn.btn-info.btn-lg(href='#')
+          span.glyphicon.glyphicon-search
+          |  Search
+      |   
+      .row
+        .col-md-3
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        |     
+        .col-md-3
+          p
+            | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        |     
+        .col-md-3
+          p
+            | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.

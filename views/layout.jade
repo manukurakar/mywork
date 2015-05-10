@@ -1,0 +1,182 @@
+doctype html
+//
+  A Design by W3layouts
+  Author: W3layout
+  Author URL: http://w3layouts.com
+  License: Creative Commons Attribution 3.0 Unported
+  License URL: http://creativecommons.org/licenses/by/3.0/
+html
+  head
+    - var title = title || "Hello"
+    title
+      | #{title}
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Planeto Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, \
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    link(href='/stylesheets/bootstrap.css', rel='stylesheet', type='text/css')
+    link(href='/stylesheets/style.css', rel='stylesheet', type='text/css')
+    script(src='/jsjquery-1.11.0.min.js')
+    link(href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700', rel='stylesheet', type='text/css')
+    // -- start-smoth-scrolling--
+    script(type='text/javascript', src='/js/move-top.js')
+    script(type='text/javascript', src='/js/easing.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+      });
+    // start-smoth-scrolling
+  body
+    // start-banner
+    #home.banner
+      .header
+        .logo
+          a(href='index.html')
+            img(src='/images/logo.png', alt='')
+        | &#x9;&#x9;&#x9;
+        .navigation
+          span.menu
+          |  
+          | &#x9;&#x9;&#x9;&#x9;&#x9;
+          ul.navig
+            li
+              a.active(href='index.html') HOME
+            span
+              img(src='/images/clk.png', alt='')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='about-us.html') ABOUT US
+            span
+              img(src='/images/clk.png', alt='')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='/pricing') PRICING
+            span
+              img(src='/images/clk.png', alt='')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='404.html') CONTACT
+            span
+              img(src='/images/clk.png', alt='')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              button.btn.btn-primary.btn-lg(type='button', onclick="window.location.href='/login'")
+                | LOGIN
+        | &#x9;&#x9;&#x9;&#x9;
+        .clearfix
+      | &#x9;&#x9;&#x9;
+      .banner-main
+
+        .container
+          .banner-top
+            h1 KNOW YOURSELF AND BE ADVANTAGE
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            //- .banner-top-btm
+            //-   .col-md-6.bnr-left
+            //-     img(src='/images/icn-1.png', alt='')
+            //-   | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            //-   .col-md-6.bnr-right
+            //-     img(src='/images/icn-2.png', alt='')
+            //-   | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            //-   .clearfix
+          | &#x9;&#x9;&#x9;&#x9;&#x9;
+          .banner-bottom
+            //- .banner-slide
+            //-   #top.callbacks_container
+            //-     ul#slider4.rslides
+            //-       li
+            //-         img(src='/images/slide-1.png', alt='')
+            //-       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            //-       li
+            //-         img(src='/images/slide-2.png', alt='')
+            //-       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            //-       li
+            //-         img(src='/images/slide-3.png', alt='')
+            //-   | &#x9;&#x9;&#x9;  
+            //-   .clearfix  
+    // script-for-menu
+    script.
+      $("span.menu").click(function(){
+      $(" ul.navig").slideToggle("slow" , function(){
+      });
+      });
+    // script-for-menu
+    // Slider-Starts-Here
+    script(src='js/responsiveslides.min.js')
+    | &#x9;&#x9;&#x9; 
+    script.
+      // You can also use "$(window).load(function() {"
+      $(function () {
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+      auto: true,
+      pager: true,
+      nav: false,
+      speed: 500,
+      namespace: "callbacks",
+      before: function () {
+      $('.events').append("<li>before event fired.</li>");
+      },
+      after: function () {
+      $('.events').append("<li>after event fired.</li>");
+      }
+      });
+      });
+    // End-slider-script
+    // end-banner
+
+    // start-idea
+    .idea
+      // This is where the previous code was placed
+      // start-footer
+      .footer
+        .container
+          .row
+            .col-md-4.left
+              block first
+            .col-md-4.left
+              block second
+            .col-md-4.left
+              block third
+
+
+          .footer-main
+            
+            | &#x9;&#x9;&#x9;&#x9;
+            .footer-bottom
+              .col-md-2.footer-left
+                ul
+                  li
+                    a(href='#')
+                      span.fb  
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li
+                    a(href='#')
+                      span.twit  
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li
+                    a(href='#')
+                      span.sky  
+              .col-md-2.footer-left
+                p Terms and Conditions
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              .col-md-4.footer-middle
+                p
+                  | &copy;
+                  a(href='http://klabs.com/')  Kurakar Labs Private Limited
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              .col-md-2.footer-left
+                p Privacy
+              .col-md-2.footer-right
+                p
+                  a.scroll(href='#home') TO THE TOP
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              .clearfix
+      // end-footer
